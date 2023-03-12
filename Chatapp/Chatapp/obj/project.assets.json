@@ -2454,24 +2454,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Borys\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Bartek\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Borys\\source\\repos\\Chatapp\\Chatapp\\Chatapp.csproj",
+      "projectUniqueName": "C:\\Users\\Bartek\\Downloads\\ZP-PROJEKT-1-main\\ZP-PROJEKT-1-main\\Chatapp\\Chatapp\\Chatapp.csproj",
       "projectName": "Chatapp",
-      "projectPath": "C:\\Users\\Borys\\source\\repos\\Chatapp\\Chatapp\\Chatapp.csproj",
-      "packagesPath": "C:\\Users\\Borys\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Borys\\source\\repos\\Chatapp\\Chatapp\\obj\\",
+      "projectPath": "C:\\Users\\Bartek\\Downloads\\ZP-PROJEKT-1-main\\ZP-PROJEKT-1-main\\Chatapp\\Chatapp\\Chatapp.csproj",
+      "packagesPath": "C:\\Users\\Bartek\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bartek\\Downloads\\ZP-PROJEKT-1-main\\ZP-PROJEKT-1-main\\Chatapp\\Chatapp\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Borys\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Bartek\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

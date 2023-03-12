@@ -1,4 +1,6 @@
-﻿using Chatapp.Models;
+﻿using Chatapp.Data;
+using Chatapp.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,18 +8,31 @@ namespace Chatapp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        public readonly ApplicationDbContext _context;
+        public readonly UserManager<AppUser> _userManager;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ApplicationDbContext context, UserManager<AppUser> userManager)
         {
-            _logger = logger;
+            _context = context;
+            _userManager = userManager;
         }
 
-        public IActionResult Index()
+        public async Task<ActionResult> Index()
         {
+            var currentUser = await _userManager.GetUserAsync(User);
+            ViewBag.CurrentUserName = currentUser.UserName;
+            var messages = await _context.Messages.ToListAsync();
             return View();
         }
-
+        public async Task<IActionResult> Create(Message message)
+        {
+            if(ModelState.IsValid)
+            {
+                message.UserName = User.Identity.Name;
+                var sender = await _userManager.GetUserAsync(User);
+                message.UserID = sender.Id;
+            }
+        }
         public IActionResult Privacy()
         {
             return View();
