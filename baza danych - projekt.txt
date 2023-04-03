@@ -1,0 +1,7 @@
+CREATE TABLE [dbo].[Message] (
+    [IdMessage] INT          IDENTITY (1, 1) NOT NULL,
+    [Author]    VARCHAR (50) NULL,
+    [Content]   NCHAR (500)  NULL,
+    [Chat]      INT          NULL,
+    PRIMARY KEY CLUSTERED ([IdMessage] ASC)
+);
