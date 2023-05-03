@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message System</title>
+    <script src="./hide.js" defer></script>
+    <script src="./index.js" defer></script>
+    <script src="./nickSetter.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+            <!-- <b>online:<span id="online_counter"> 0</span></b> -->
+            <label id="nick" >Nick:</label>
+            <input type="text" id="nickname" value="Guest" />
+            <button id="setNick"
+                onclick="setNick(document.getElementById('nickname').value)">Ustaw nick</button>
+        </header>
+        <main id="room">
+            <h1>Chat</h1>
+            <div id="chat"></div>
+            <div style="display:flex">
+                <input type="text" id="messageInput" value="">
+                <button id="messageButton"
+                    onclick="chatSend(document.getElementById('messageInput').value,document.getElementById('nickname').value)"
+                    onkeydown="enterButtonSend(event)">Wyślij</button>
+            </div>
+        </main>
+</body>
+</html>
