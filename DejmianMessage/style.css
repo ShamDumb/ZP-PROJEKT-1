@@ -24,7 +24,6 @@ header{
     align-items: center;
     background-color: blueviolet;
     color: aliceblue;
-    font-family:
 }
 
 main{
@@ -87,4 +86,5 @@ header * {
 
 #nickname{
     font-family: fantasy;
+    background-color: aliceblue;
 }
