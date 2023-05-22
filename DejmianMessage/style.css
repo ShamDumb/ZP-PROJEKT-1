@@ -24,6 +24,7 @@ header{
     align-items: center;
     background-color: blueviolet;
     color: aliceblue;
+    font-family:
 }
 
 main{
@@ -64,6 +65,7 @@ input {
 #nick {
     flex: 1;
     text-align: right;
+    font-family: fantasy;
 }
 
 header * {
