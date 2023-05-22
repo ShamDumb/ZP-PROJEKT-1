@@ -88,8 +88,10 @@ header * {
     font-family: fantasy;
     background-color: aliceblue;
     border-radius: 15px;
+
 }
 
 ::placeholder{
     color: black;
+    padding: 10px;
 }
