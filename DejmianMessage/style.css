@@ -88,3 +88,7 @@ header * {
     font-family: fantasy;
     background-color: aliceblue;
 }
+
+::placeholder{
+    color: black;
+}
