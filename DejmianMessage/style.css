@@ -74,6 +74,7 @@ header * {
 
 #setNick {
     font-family: fantasy;
+    background-color: aliceblue;
 }
 
 #messageInput {
