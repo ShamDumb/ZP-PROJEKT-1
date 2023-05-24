@@ -1,9 +1,0 @@
-C:\Users\Borys\Documents\ZP_PROJEKT_1\Chatapp\Chatapp\obj\Debug\net6.0\Chatapp.csproj.AssemblyReference.cache
-C:\Users\Borys\Documents\ZP_PROJEKT_1\Chatapp\Chatapp\obj\Debug\net6.0\Chatapp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Borys\Documents\ZP_PROJEKT_1\Chatapp\Chatapp\obj\Debug\net6.0\Chatapp.AssemblyInfoInputs.cache
-C:\Users\Borys\Documents\ZP_PROJEKT_1\Chatapp\Chatapp\obj\Debug\net6.0\Chatapp.AssemblyInfo.cs
-C:\Users\Borys\Documents\ZP_PROJEKT_1\Chatapp\Chatapp\obj\Debug\net6.0\Chatapp.csproj.CoreCompileInputs.cache
-C:\Users\Borys\Documents\ZP_PROJEKT_1\Chatapp\Chatapp\obj\Debug\net6.0\Chatapp.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Borys\Documents\ZP_PROJEKT_1\Chatapp\Chatapp\obj\Debug\net6.0\Chatapp.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Borys\Documents\ZP_PROJEKT_1\Chatapp\Chatapp\obj\Debug\net6.0\Chatapp.RazorAssemblyInfo.cache
-C:\Users\Borys\Documents\ZP_PROJEKT_1\Chatapp\Chatapp\obj\Debug\net6.0\Chatapp.RazorAssemblyInfo.cs
