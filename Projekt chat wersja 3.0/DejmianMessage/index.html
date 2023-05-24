@@ -8,6 +8,7 @@
     <script src="./hide.js" defer></script>
     <script src="./index.js" defer></script>
     <script src="./nickSetter.js" defer></script>
+    <script src="./chatrooms.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,17 +16,24 @@
             <!-- <b>online:<span id="online_counter"> 0</span></b> -->
             <label id="nick" >Nick:</label>
             <input type="text" id="nickname" value="Guest" />
-            <button id="setNick"
-                onclick="setNick(document.getElementById('nickname').value)">Ustaw nick</button>
+            <button id="setNick"onclick="setNick()">Ustaw nick</button>
         </header>
+
         <main id="room">
-            <h1>Chat</h1>
-            <div id="chat"></div>
-            <div style="display:flex">
-                <input type="text" id="messageInput" value="">
-                <button id="messageButton"
-                    onclick="chatSend(document.getElementById('messageInput').value,document.getElementById('nickname').value)"
-                    onkeydown="enterButtonSend(event)">Wyślij</button>
+            <div>
+                <input type="text" id="newChatName" placeholder="chat name">
+                <button id="newChatButton" onclick="dodajChat(document.getElementById('newChatName').value,document.getElementById('nickname').value)">Dodaj chat</button>
+                <div id="chatrooms"></div>
+            </div>
+            <div>
+                <h1 id="chatName">Chat</h1>
+                <div id="chat"></div>
+                <div style="display:flex">
+                    <input id="chatId" value="1" hidden="true">
+                    <input type="text" id="messageInput" value="" placeholder="Przywitaj sie...">
+                    <button id="messageButton" onclick="chatSend()">Wyślij</button>
+                </div>
+                <div id="users"></div>
             </div>
         </main>
 </body>

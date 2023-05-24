@@ -3,6 +3,7 @@ $to_write = array();
 $chat = "";
 $time = time();
 $nick = "";
+$chatroom_id = 1;
 
 include('./config.php');
 // $ip_user = $_SERVER['REMOTE_ADDR'];
@@ -11,6 +12,11 @@ if ( isset($_REQUEST['nick']) ) {
 
     $nick = $_REQUEST['nick'];
 
+}
+
+if ( isset($_REQUEST['chatroom'])) {
+
+    $chatroom_id = $_REQUEST['chatroom'];
 }
 
 $link = mysqli_connect($host, $user, $pass, $database);
@@ -35,8 +41,8 @@ if (!$current_user = mysqli_fetch_row($q_sel_users)) {
 
     }
 }
-
-$sel_chat_history = "SELECT * FROM `chat_user`";
+$sel_chat_history = "SELECT * FROM `chat_user` where chatroom_idchatroom =". $chatroom_id;
+// $sel_chat_history = "SELECT * FROM `chat_user`";
 $q_sel_chat_history = mysqli_query($link, $sel_chat_history);
 
 while ($chat_history = mysqli_fetch_array($q_sel_chat_history)) {
@@ -45,14 +51,16 @@ while ($chat_history = mysqli_fetch_array($q_sel_chat_history)) {
 
 }
 
-if (isset($_GET['chat'])&&isset($_GET['nick'])) {
+if (isset($_GET['chat'])&&isset($_GET['nick'])&&isset($_GET['chatroom'])) {
+// if (isset($_GET['chat'])&&isset($_GET['nick'])) {
 
     $sel_users = "SELECT `user_id` FROM `user` WHERE `nick`='$nick' ";
     $q_sel_users = mysqli_query($link, $sel_users);
 
     if ($current_user = mysqli_fetch_row($q_sel_users)) {
 
-        $ins_chat_history = "INSERT INTO `chat`(`chat_id`,`user_user_id`,`message`) VALUES ( default,'".$current_user[0]."','".$_GET['chat']."')";
+        $ins_chat_history = "INSERT INTO `chat`(`chat_id`,`user_user_id`,`message`,`chatroom_idchatroom`) VALUES ( default,".$current_user[0].",'".$_GET['chat']."',".$_GET['chatroom'].")";
+        // $ins_chat_history = "INSERT INTO `chat`(`chat_id`,`user_user_id`,`message`) VALUES ( default,'".$current_user[0]."','".$_GET['chat']."')";
     
         $q_ins_chat_history = mysqli_query($link, $ins_chat_history);
         $chat .= $nick . ": <span class='chatText' >" . $_GET['chat'] . "</span>";
