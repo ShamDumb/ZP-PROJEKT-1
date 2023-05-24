@@ -4,78 +4,86 @@
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
-    
-}
-
-h1{
-    text-align:center;
-}
-
-body{
-    font-size: 16px;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-header{
-    display: flex;
-    align-items: center;
-}
-
-main{
-    max-height: 100vh - 6rem;
-    min-height: 100vh - 6rem;
-    height: 100vh - 6rem;
-    width: 100vw - 4rem;
-    display: block;
-    flex-direction: column;
-    padding: 1rem;
-}
-
-button{
-    height: 2rem;
-    flex: 1;
-}
-
-input {
-    height: 2rem;
-    flex: 2;
-}
-
-.hidden {
-    display: none;
-}
-
-#chat {
-    padding: .5rem;
-    margin: .5rem;
-    max-height: 84vh;
-    overflow-y: scroll;
-}
-
-.chatText {
-    word-wrap: break-word;
-}
-
-#nick {
-    flex: 1;
-    text-align: right;
-}
-
-header * {
-    margin: .5rem;
-}
-
-#setNick {
-
-}
-
-#messageInput {
-    flex: 6;
-}
-
-#messageButton {
-
-}
+  }
+  
+  h1{
+      text-align:center;
+  }
+  
+  body{
+      background-color:#252525;
+      color:white;
+      font-size: 16px;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  header{
+      display: flex;
+      align-items: center;
+  }
+  
+  main{
+      max-height: 100vh - 6rem;
+      min-height: 100vh - 6rem;
+      height: 100vh - 6rem;
+      width: 100vw - 4rem;
+      display: block;
+      flex-direction: column;
+      padding: 1rem;
+  }
+  
+  button{
+      height: 2rem;
+      flex: 1;
+  }
+  
+  input {
+      background:#191A1C;
+      color:white;
+      height: 2rem;
+      flex: 2;
+      border-radius:12px;
+  
+  
+  }
+  
+  .hidden {
+      display: none;
+  }
+  
+  #chat {
+      padding: .5rem;
+      margin: .5rem;
+      max-height: 84vh;
+      overflow-y: scroll;
+  }
+  
+  .chatText {
+      word-wrap: break-word;
+  }
+  
+  #nick {
+      flex: 1;
+      text-align: right;
+  }
+  
+  header * {
+      margin: .5rem;
+  }
+  
+  #setNick {
+  
+  }
+  
+  #messageInput {
+      flex: 6;
+  }
+  
+  #messageButton {
+  border-radius:12px;
+      color:white;
+      background:#191A1C;
+  }
