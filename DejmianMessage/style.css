@@ -17,6 +17,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: darkslateblue;
 }
 
 header{
@@ -75,6 +76,7 @@ header * {
     font-family: fantasy;
     background-color: aliceblue;
     border-radius: 15px;
+    background-color: darkslateblue;
 }
 
 #messageInput {
@@ -87,7 +89,7 @@ header * {
 
 #nickname{
     font-family: fantasy;
-    background-color: aliceblue;
+    background-color: darkslateblue;
     border-radius: 15px;
 
 }
