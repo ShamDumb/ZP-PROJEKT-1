@@ -93,5 +93,9 @@ header * {
 
 ::placeholder{
     color: black;
-    padding: 10px;
 }
+input[type="text"]{
+    text-indent: 10px;
+}
+
+
