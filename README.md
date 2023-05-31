@@ -1,7 +1,7 @@
 # ZP-PROJEKT-1
 Pierwszy projekt na ZP
 Tą tragedię tworzą Bartosz Owczarz, Damian Dobosz i Borys Gaik,  
-tymczasowy link do live share'a : https://prod.liveshare.vsengsaas.visualstudio.com/join?96D80ADA09B3652EBD33885DEF1A3D242722 ---> https://prod.liveshare.vsengsaas.visualstudio.com/join?4552BEB55F87AF7E619E55FA92FB31E2FB4C  
+tymczasowy link do live share'a : https://prod.liveshare.vsengsaas.visualstudio.com/join?4552BEB55F87AF7E619E55FA92FB31E2FB4C  --> https://prod.liveshare.vsengsaas.visualstudio.com/join?CA7958337CB969ED6807BCE129E2AEFC31E4
 
 ────────────────────░███░
 ───────────────────░█░░░█░
